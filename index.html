@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="quiz-container">
+
+    <!-- Start Screen -->
+    <div id="startScreen">
+        <h1>Quiz Challenge</h1>
+        <p>10 Questions • +1 / -1 Marking</p>
+        <button id="startBtn">Start Quiz</button>
+    </div>
+
+    <!-- Quiz Screen -->
+    <div id="quizScreen" style="display:none;">
+        <div class="top-bar">
+            <span id="timer">⏱ 10s</span>
+            <span id="score">Score: 0</span>
+        </div>
+
+        <div id="question"></div>
+        <div id="options"></div>
+        <div id="feedback"></div>
+
+        <button id="restartBtn" style="display:none;">Restart Quiz</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
